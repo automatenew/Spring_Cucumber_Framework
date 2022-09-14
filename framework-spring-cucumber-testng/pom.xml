@@ -40,12 +40,21 @@
         <compiler.plugin.version>3.8.1</compiler.plugin.version>
         <spring-rabbit.version>2.4.4</spring-rabbit.version>
         <org.json.version>20220320</org.json.version>
+        <groovy.version>3.0.7</groovy.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencies>
      <!--Newly added Dependencies-->
+     
+     <!--Report logger filter dependency-->
+      <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>cucumber-rest-assured-extent-testng</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        
     <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
 <dependency>
     <groupId>javax.xml.bind</groupId>
@@ -59,7 +68,18 @@
 		<version>1.18.24</version>
 		<scope>provided</scope>
 	</dependency>
-
+<!-- used to parse Json Document -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>${restassured.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>xml-path</artifactId>
+			<version>${restassured.version}</version><!--$NO-MVN-MAN-VER$-->
+		</dependency>
 
 
  <!--Newly added Dependencies-->
@@ -237,6 +257,12 @@
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                         </argLine>
                         <useFile>false</useFile>
+						<properties>
+							<property>
+								<name>dataproviderthreadcount</name>
+								<value>2</value>
+							</property>
+						</properties>
                     </configuration>
                     <dependencies>
                         <dependency>

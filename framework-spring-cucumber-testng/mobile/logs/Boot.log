@@ -1,14 +1,9 @@
-2022-09-08 23:29:12 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - Starting Hooks on BLR-P7112490LP with PID 31804 (C:\Project\framework-spring-cucumber-testng\mobile\target\test-classes started by P7112490 in C:\Project\framework-spring-cucumber-testng\mobile)
-2022-09-08 23:29:12 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - The following profiles are active: prod
-2022-09-08 23:29:13 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - Started Hooks in 1.257 seconds (JVM running for 4.832)
-2022-09-08 23:29:14 [TestNG-PoolService-0] INFO c.s.mobile.utils.DriverManager - Local URL for Appium: applicationProperties.getAppiumGridUrl ( )
-2022-09-08 23:29:28 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
-2022-09-08 23:29:28 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-08 23:29:28 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Executing Scenario: Write Title "Jesus Salatiel" and content "Test Automation" ===============================
-2022-09-08 23:29:28 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-08 23:29:28 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
-2022-09-08 23:29:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
-2022-09-08 23:29:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-08 23:29:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
-2022-09-08 23:29:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-08 23:29:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:50:20 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - Starting Hooks on BLR-P7112490LP with PID 26868 (D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\mobile\target\test-classes started by P7112490 in D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\mobile)
+2022-09-15 00:50:20 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - The following profiles are active: prod
+2022-09-15 00:50:22 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - Started Hooks in 1.557 seconds (JVM running for 5.637)
+2022-09-15 00:50:22 [TestNG-PoolService-0] INFO c.s.mobile.utils.DriverManager - Local URL for Appium: http://127.0.0.1:4444/wd/hub
+2022-09-15 00:50:38 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:50:38 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:50:38 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Test: FAILED ===============================
+2022-09-15 00:50:38 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:50:38 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 

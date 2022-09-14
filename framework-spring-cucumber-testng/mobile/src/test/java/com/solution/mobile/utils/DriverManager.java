@@ -1,12 +1,15 @@
 package com.solution.mobile.utils;
 
 
+import com.solution.common.utils.ApplicationProperties;
 import com.solution.common.utils.SelenoidType;
 import com.solution.common.utils.SelenoidValues;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
+
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -25,22 +28,48 @@ public class DriverManager {
 
     @Autowired
     private Environment environment;
+    
+    @Autowired
+    private ApplicationProperties applicationProperties;
 
     public void createAppiumDriver ( ) throws MalformedURLException {
-        if ( getAppiumDriver ( ) == null ) {
+    	
+      //  if ( getAppiumDriver ( ) == null ) {
             if ( Arrays.toString ( this.environment.getActiveProfiles ( ) ).contains ( "jenkins" ) ) {
                 log.info ( "Remote URL for Appium: " + "applicationProperties.getAppiumGridUrl ( )" );
                 setRemoteDriverAppium ( "http://127.0.0.1:4444/wd/hub" );
-            } else {
-                log.info ( "Local URL for Appium: " + "applicationProperties.getAppiumGridUrl ( )" );
-                setLocalDriverAppium ( "http://127.0.0.1:4723/wd/hub" );
+            } else if(( Arrays.toString ( this.environment.getActiveProfiles ( ) ).contains ( "saucelab" ) )){
+            	//may need to improve this conditioning
+            	creatSaucelabInstance();
             }
-        }
+            else {
+                log.info ( "Local URL for Appium: " + applicationProperties.getAppiumGridUrl ( ) );
+                setLocalDriverAppium ( "http://127.0.0.1:4444/wd/hub" );
+            }
+      //  }
     }
-
+    public void creatSaucelabInstance() throws MalformedURLException {
+        MutableCapabilities caps = new MutableCapabilities();
+        caps.setCapability("platformName", "Android");
+        caps.setCapability("app", "https://github.com/jesussalatiel/Appium-Cloud/raw/main/notepad.apk");
+        caps.setCapability("appium:deviceName", "Google Pixel 3a GoogleAPI Emulator");
+        caps.setCapability("appium:platformVersion", "11.0");
+        MutableCapabilities sauceOptions = new MutableCapabilities();
+        sauceOptions.setCapability("appiumVersion", "1.20.2");
+        caps.setCapability("sauce:options", sauceOptions);
+        log.info("Step 1 -> App Launched Successfully !!!");
+        appiumDriverThreadLocal.set (new AndroidDriver(new URL(buildURL()), caps) );
+    }
+    public String buildURL() {
+        String url      = "ondemand.saucelabs.com/wd/hub";
+       // String auth     = "basic"; // todo none|basic|etc
+        String username = "setiteam";
+        String password = "e04357af-5e6e-4a5f-b6c6-a503c9181813";
+        return String.format("http://%s:%s@%s", username, password, url);
+    }
     public void setLocalDriverAppium(String hubUrl) throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities ( );
-        capabilities.setCapability ( MobileCapabilityType.DEVICE_NAME , "emulator-5554" );
+        capabilities.setCapability ( MobileCapabilityType.DEVICE_NAME , "emulator-5560" );
         capabilities.setCapability ( MobileCapabilityType.APP , "https://github.com/jesussalatiel/Appium-Cloud/raw/main/notepad.apk" );
         capabilities.setCapability ( MobileCapabilityType.AUTOMATION_NAME , AutomationName.ANDROID_UIAUTOMATOR2 );
         capabilities.setCapability ( MobileCapabilityType.PLATFORM_NAME, "Android" );
@@ -57,7 +86,9 @@ public class DriverManager {
         capabilities.setCapability ( MobileCapabilityType.FULL_RESET , false );
 
         // Create Remote Connection to Selenoid
+        System.out.println("Creating Appium Driver Instance");
         appiumDriverThreadLocal.set ( new AppiumDriver <> ( new URL ( hubUrl ) , capabilities ) );
+    System.out.println("Created Appium Driver Instance");
     }
 
     /*
@@ -99,7 +130,7 @@ public class DriverManager {
     }
 
 
-    public synchronized static AppiumDriver getAppiumDriver ( ) {
+    public synchronized  AppiumDriver getAppiumDriver ( ) {
         return appiumDriverThreadLocal.get ( );
     }
 }

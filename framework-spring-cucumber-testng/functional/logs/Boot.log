@@ -1,0 +1,3 @@
+2022-09-15 00:53:32 [TestNG-PoolService-0] INFO com.solution.ui.step.Hooks - Starting Hooks on BLR-P7112490LP with PID 29116 (D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\functional\target\test-classes started by P7112490 in D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\functional)
+2022-09-15 00:53:32 [TestNG-PoolService-0] INFO com.solution.ui.step.Hooks - The following profiles are active: prod
+2022-09-15 00:53:34 [TestNG-PoolService-0] INFO com.solution.ui.step.Hooks - Started Hooks in 2.327 seconds (JVM running for 11.882)

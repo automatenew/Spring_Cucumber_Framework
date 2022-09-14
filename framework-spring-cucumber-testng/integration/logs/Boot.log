@@ -1,0 +1,31 @@
+2022-09-15 00:46:45 [TestNG-PoolService-0] INFO com.solution.api.step.Hooks - Starting Hooks on BLR-P7112490LP with PID 35628 (D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\integration\target\test-classes started by P7112490 in D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\integration)
+2022-09-15 00:46:45 [TestNG-PoolService-0] INFO com.solution.api.step.Hooks - The following profiles are active: prod
+2022-09-15 00:46:46 [TestNG-PoolService-0] INFO com.solution.api.step.Hooks - Started Hooks in 2.332 seconds (JVM running for 9.182)
+2022-09-15 00:46:47 [TestNG-PoolService-1] INFO com.solution.api.step.Step - The user makes an request for the weather in : Paris
+2022-09-15 00:46:47 [TestNG-PoolService-0] INFO com.solution.api.step.Step - The user makes an request for the weather in : Dublin
+2022-09-15 00:46:50 [TestNG-PoolService-0] INFO com.solution.api.step.Step - Verifying the Response location : Dublin, is equal to the expected location : Dublin
+2022-09-15 00:46:50 [TestNG-PoolService-1] INFO com.solution.api.step.Step - Verifying the Response location : Paris, is equal to the expected location : Paris
+2022-09-15 00:46:51 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:46:51 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:46:51 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:46:51 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:46:51 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-09-15 00:46:51 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:46:51 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:46:51 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-09-15 00:46:51 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:46:51 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:46:51 [TestNG-PoolService-0] INFO com.solution.api.step.Step - The user makes an request for the weather in : Dublin
+2022-09-15 00:46:51 [TestNG-PoolService-1] INFO com.solution.api.step.Step - The user makes an request for the weather in : Sydney
+2022-09-15 00:46:52 [TestNG-PoolService-0] INFO com.solution.api.step.Step - Verifying the Response location : Dublin, is equal to the expected location : Dublin
+2022-09-15 00:46:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:46:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:46:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-09-15 00:46:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:46:52 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:46:52 [TestNG-PoolService-1] INFO com.solution.api.step.Step - Verifying the Response location : Sydney, is equal to the expected location : Sydney
+2022-09-15 00:46:52 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
+2022-09-15 00:46:52 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:46:52 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-09-15 00:46:52 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-09-15 00:46:52 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 

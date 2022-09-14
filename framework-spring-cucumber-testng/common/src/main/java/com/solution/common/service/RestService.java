@@ -1,6 +1,8 @@
 package com.solution.common.service;
 
 import io.restassured.specification.RequestSpecification;
+import tech.grasshopper.filter.ExtentRestAssuredFilter;
+
 import org.springframework.stereotype.Service;
 
 import static io.restassured.RestAssured.given;
@@ -9,6 +11,6 @@ import static io.restassured.RestAssured.given;
 public class RestService {
 
     public RequestSpecification getRequestSpecification() {
-        return given().header("Content-Type", "application/json");
+        return given().header("Content-Type", "application/json").filter(new ExtentRestAssuredFilter());
     }
 }

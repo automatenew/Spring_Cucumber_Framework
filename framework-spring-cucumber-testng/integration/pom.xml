@@ -11,7 +11,15 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>integration</artifactId>
 
+<properties>
+	<allure.results.directory>
+            ${project.build.directory}/allure-results
+        </allure.results.directory>
+        <extent.report.directory>report</extent.report.directory>
+	</properties> 
+	
     <dependencies>
+    
         <dependency>
             <groupId>framework-spring-cucumber-testng</groupId>
             <artifactId>common</artifactId>
@@ -38,6 +46,35 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+             <plugin>
+                <groupId>tech.grasshopper</groupId>
+                <artifactId>cucumber-rest-assured-extent-report-plugin</artifactId>
+                <version>2.2.0</version>
+                <executions>
+                    <execution>
+                        <id>report</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>extentreport</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <allureResultsDirectory>${allure.results.directory}
+                    </allureResultsDirectory>
+                    <reportDirectory>${extent.report.directory}</reportDirectory>
+                    <reportDirectoryTimeStamp>dd-MM-yyyy HH_mm_ss
+                    </reportDirectoryTimeStamp>
+                    <sparkGenerate>true</sparkGenerate>
+                    <pdfGenerate>true</pdfGenerate>
+                    <sparkConfigFilePath>src/test/resources/spark-config.xml
+                    </sparkConfigFilePath>
+                    <systemInfoFilePath>src/test/resources/systeminfo.properties
+                    </systemInfoFilePath>
+                    <sparkViewOrder>DASHBOARD,TEST,EXCEPTION,CATEGORY,AUTHOR,DEVICE
+                    </sparkViewOrder>
+                </configuration>
             </plugin>
         </plugins>
     </build>

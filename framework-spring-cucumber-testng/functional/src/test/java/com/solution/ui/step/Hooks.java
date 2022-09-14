@@ -26,7 +26,7 @@ public class Hooks extends AbstractTestDefinition {
     private DriverManager driverManager;
 
     @Before
-    public void beforeScenario(Scenario scenario) throws MalformedURLException {
+    public void beforeScenario(Scenario scenario) throws Exception {
         synchronized (lock) {
             if (!initialized) {
                 if (!driverManager.isDriverExisting()) {

@@ -8,11 +8,8 @@ import org.testng.annotations.DataProvider;
         features = {
                 "src/test/resources/feature/"
         },
-        plugin = {
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-                "json:../target/api-report.json"
-        })
+        		plugin = { "summary", "json:target/cucumber-json.json",
+        "tech.grasshopper.AllureCucumberMappingPlugin:target/cucumber-allure.json" })
 public class RunnerTest extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
