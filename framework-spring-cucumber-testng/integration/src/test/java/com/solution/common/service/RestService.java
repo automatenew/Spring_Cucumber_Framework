@@ -11,6 +11,6 @@ import static io.restassured.RestAssured.given;
 public class RestService {
 
     public RequestSpecification getRequestSpecification() {
-        return given().header("Content-Type", "application/json").filter(new ExtentRestAssuredFilter());
+        return given().header("Content-Type", "application/json").filter( new ExtentRestAssuredFilter());
     }
 }

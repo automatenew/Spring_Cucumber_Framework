@@ -19,7 +19,6 @@
 	</properties> 
 	
     <dependencies>
-    
         <dependency>
             <groupId>framework-spring-cucumber-testng</groupId>
             <artifactId>common</artifactId>

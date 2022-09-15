@@ -35,7 +35,7 @@
         <appium-version>7.6.0</appium-version>
         <webdrivermanager-version>5.2.2</webdrivermanager-version>
         <selenide-version>6.1.1</selenide-version>
-        <restassured.version>3.0.0</restassured.version>
+        <restassured.version>4.3.3</restassured.version>
         <surfire.plugin.version>2.22.2</surfire.plugin.version>
         <compiler.plugin.version>3.8.1</compiler.plugin.version>
         <spring-rabbit.version>2.4.4</spring-rabbit.version>
