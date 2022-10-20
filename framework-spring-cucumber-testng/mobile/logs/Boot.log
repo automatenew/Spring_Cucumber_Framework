@@ -1,9 +1,29 @@
-2022-09-15 11:42:28 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - Starting Hooks on BLR-P7112490LP with PID 36232 (D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\mobile\target\test-classes started by P7112490 in D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\mobile)
-2022-09-15 11:42:28 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - The following profiles are active: prod
-2022-09-15 11:42:31 [TestNG-PoolService-0] INFO com.solution.mobile.step.Hooks - Started Hooks in 4.09 seconds (JVM running for 15.129)
-2022-09-15 11:42:35 [TestNG-PoolService-0] INFO c.s.mobile.utils.DriverManager - Local URL for Appium: http://127.0.0.1:4444/wd/hub
-2022-09-15 11:43:02 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
-2022-09-15 11:43:02 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-15 11:43:02 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Test: FAILED ===============================
-2022-09-15 11:43:02 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-15 11:43:02 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 22:00:34 [main] INFO com.solution.mobile.step.Hooks - Starting Hooks on BLR-P7112490LP with PID 12592 (D:\Spring_Cucumber_Framework\framework-spring-cucumber-testng\mobile\target\test-classes started by P7112490 in D:\Spring_Cucumber_Framework\framework-spring-cucumber-testng\mobile)
+2022-10-20 22:00:34 [main] INFO com.solution.mobile.step.Hooks - The following profiles are active: prod
+2022-10-20 22:00:35 [main] INFO com.solution.mobile.step.Hooks - Started Hooks in 2.301 seconds (JVM running for 9.242)
+2022-10-20 22:00:36 [main] INFO c.s.mobile.utils.DriverManager - Step 1 -> App Launched Successfully !!!
+2022-10-20 22:01:15 [main] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 22:01:15 [main] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 22:01:15 [main] INFO com.solution.common.utils.HookUtil - ================================Executing Scenario: Write Title "Jesus Salatiel" and content "Test Automation" ===============================
+2022-10-20 22:01:15 [main] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 22:01:15 [main] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 22:01:52 [main] INFO c.s.mobile.utils.DriverManager - Building Chrome options..
+2022-10-20 22:01:52 [main] INFO c.s.mobile.utils.DriverManager - Returning Chrome options
+2022-10-20 22:02:15 [main] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 22:02:15 [main] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 22:02:15 [main] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-10-20 22:02:15 [main] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 22:02:15 [main] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 22:02:18 [main] INFO c.s.mobile.utils.DriverManager - Step 1 -> App Launched Successfully !!!
+2022-10-20 22:03:00 [main] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 22:03:00 [main] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 22:03:00 [main] INFO com.solution.common.utils.HookUtil - ================================Executing Scenario: Write Title "Globant" and content "Company" ===============================
+2022-10-20 22:03:00 [main] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 22:03:00 [main] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 22:03:27 [main] INFO c.s.mobile.utils.DriverManager - Building Chrome options..
+2022-10-20 22:03:27 [main] INFO c.s.mobile.utils.DriverManager - Returning Chrome options
+2022-10-20 22:03:30 [main] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 22:03:30 [main] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 22:03:30 [main] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-10-20 22:03:30 [main] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 22:03:30 [main] INFO com.solution.common.utils.HookUtil - 

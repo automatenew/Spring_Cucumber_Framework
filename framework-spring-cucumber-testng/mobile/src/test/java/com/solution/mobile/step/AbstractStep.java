@@ -11,7 +11,13 @@ public abstract class AbstractStep {
 
     @Autowired
     private DriverHelper driverHelper;
-
+    
+    protected void launchChrome() throws Exception {
+    	driverHelper.createChromeDriver();
+    }
+    protected void launchGoogle() throws Exception {
+    	driverHelper.launchApp();
+    }
     protected void click(By locator) throws NoSuchFieldException {
         driverHelper.click(locator);
     }

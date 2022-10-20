@@ -2,6 +2,8 @@ package com.solution.mobile.step;
 
 import com.solution.common.utils.ApplicationProperties;
 import com.solution.mobile.page.Application;
+import com.solution.mobile.utils.DriverHelper;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
@@ -17,7 +19,13 @@ public class NotepadPageSteps extends AbstractStep {
     public NotepadPageSteps (ApplicationProperties applicationProperties) {
         this.applicationProperties = applicationProperties;
     }
-
+    
+    @Given("Launch CHrome Browser")
+    public void userIsOpenMainPage() throws Exception {
+    	launchChrome();
+    	launchGoogle();
+    	
+    }
     @Given("The user clicked on new note")
     public void the_user_clicked_on_new_note() throws NoSuchFieldException {
         click ( By.id ("com.onto.notepad:id/add_note" ) );

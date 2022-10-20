@@ -32,7 +32,16 @@ public class DriverHelper {
             driverManager.getAppiumDriver ( ).findElement ( locator ).click ( );
         }
     }
-
+    public void createChromeDriver () throws Exception {
+       // if ( driverManager. ) {
+            driverManager.createWebWebDriver("chrome", false);
+     //   }
+    }
+    public void launchApp () throws Exception {
+        // if ( driverManager. ) {
+             driverManager.getWebDriver().get("https://www.google.com/");
+      //   }
+     }
 
     /**
      * Send Keys to the specified element, clears the element first

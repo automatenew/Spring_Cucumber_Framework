@@ -6,6 +6,7 @@ import com.solution.ui.config.AbstractTestDefinition;
 import com.solution.ui.utils.DriverManager;
 import com.codeborne.selenide.WebDriverRunner;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.spring.CucumberContextConfiguration;
@@ -37,11 +38,14 @@ public class Hooks extends AbstractTestDefinition {
         }
         driverManager.createSeleniumDriver ();
     }
-
+    @AfterStep
+    public void afterStep(Scenario scenario) {
+    	hookUtil.takeScreenshot ( scenario,  driverManager.getWebDriver ());
+    }
     @After
     public void afterScenario(Scenario scenario) {
         hookUtil.endOfTest(scenario, driverManager.getWebDriver ());
-        hookUtil.takeScreenshot ( scenario,  driverManager.getWebDriver ());
+        //hookUtil.takeScreenshot ( scenario,  driverManager.getWebDriver ());
         if (driverManager.getWebDriver() != null) {
             WebDriverRunner.closeWebDriver();
         }

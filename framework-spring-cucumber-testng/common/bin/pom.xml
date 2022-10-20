@@ -6,47 +6,47 @@
         <artifactId>framework-spring-cucumber-testng</artifactId>
         <groupId>framework-spring-cucumber-testng</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>functional</artifactId>
-
+    <version>1.0-SNAPSHOT</version>
     <dependencies>
-    
         <dependency>
-            <groupId>framework-spring-cucumber-testng</groupId>
-            <artifactId>common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>8.1.1</version>
+            <scope>compile</scope>
         </dependency>
-
-        <!-- Selenium/Appium Dependencies -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>${appium-version}</version>
         </dependency>
     </dependencies>
+    <artifactId>common</artifactId>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-remote-resources-plugin</artifactId>
                 <version>1.7.0</version>
-                <configuration>
-                    <resourceBundles>
-                        <resourceBundle>framework-spring-cucumber-testng:common:1.0-SNAPSHOT
-                        </resourceBundle>
-                    </resourceBundles>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>process</goal>
+                            <goal>bundle</goal>
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <includes>
+                        <include>**/extent.properties</include>
+                        <include>**/logback.xml</include>
+                        <include>**/allure.properties</include>
+                        <include>**/extent.xml</include>
+                    </includes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>

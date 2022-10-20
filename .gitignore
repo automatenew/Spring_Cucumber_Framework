@@ -10,3 +10,5 @@ framework-spring-cucumber-testng/mobile/logs/Boot.log
 framework-spring-cucumber-testng/functional/logs/Boot.log
 framework-spring-cucumber-testng/integration/logs/Boot.log
 framework-spring-cucumber-testng/mobile/logs/Boot.log
+*.prefs
+*.log

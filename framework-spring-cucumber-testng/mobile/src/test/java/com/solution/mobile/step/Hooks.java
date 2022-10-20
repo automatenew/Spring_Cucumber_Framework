@@ -4,6 +4,7 @@ import com.solution.common.utils.HookUtil;
 import com.solution.mobile.config.AbstractTestDefinition;
 import com.solution.mobile.utils.DriverManager;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.spring.CucumberContextConfiguration;
@@ -26,13 +27,29 @@ public class Hooks extends AbstractTestDefinition {
         driverManager.createAppiumDriver ();
         hookUtil.startScenario ( scenario );
     }
-
+@AfterStep
+public void afterStep(Scenario scenario) {
+	if(driverManager.getWebDriver()!=null) {
+	    hookUtil.takeScreenshot ( scenario, driverManager.getWebDriver() );
+	}else if (driverManager.getWebDriver()!=null && driverManager.getAppiumDriver()!=null ) {
+		hookUtil.takeScreenshot ( scenario, driverManager.getWebDriver() );
+		hookUtil.takeScreenshot ( scenario, driverManager.getAppiumDriver () );
+	}
+	else {
+		hookUtil.takeScreenshot ( scenario, driverManager.getAppiumDriver () );
+	}
+	
+    
+}
     @After
     public void afterScenario(Scenario scenario) {
-        hookUtil.takeScreenshot ( scenario, driverManager.getAppiumDriver () );
+        
         hookUtil.endOfTest ( scenario, driverManager.getAppiumDriver () );
         if(driverManager.getAppiumDriver () != null){
             driverManager.getAppiumDriver ().quit ();
+        }
+        if(driverManager.getWebDriver () != null){
+            driverManager.getWebDriver ().quit ();
         }
     }
 }

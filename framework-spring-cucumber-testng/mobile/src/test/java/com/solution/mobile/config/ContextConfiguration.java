@@ -7,7 +7,7 @@ import org.springframework.retry.annotation.EnableRetry;
 
 @EnableRetry
 @Configuration
-@ComponentScan({"com.solution.mobile", "com.solution.common"})
+@ComponentScan({"com.solution.mobile", "com.solution.common","com.solution.ui.page"})
 @PropertySource("classpath:/application.properties")
 public class ContextConfiguration {
 }

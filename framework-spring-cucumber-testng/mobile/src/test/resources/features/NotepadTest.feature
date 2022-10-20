@@ -8,11 +8,11 @@ Feature: As a user, I want write one note with title and content
     And The user write the content <content>
     And The user click on save note
     Then The user validate the title with the text <title> displayed
-
+	And Launch CHrome Browser
 
     Examples:
       | title | content|
       | "Jesus Salatiel"   |  "Test Automation"   |
-      #| "Globant"          |   "Company"          |
+      | "Globant"          |   "Company"          |
 
 

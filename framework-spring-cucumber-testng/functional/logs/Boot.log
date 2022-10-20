@@ -1,27 +1,27 @@
-2022-09-15 11:26:13 [TestNG-PoolService-1] INFO com.solution.ui.step.Hooks - Starting Hooks on BLR-P7112490LP with PID 9096 (D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\functional\target\test-classes started by P7112490 in D:\Spring_Cucumber_Framework\Spring_Cucumber_Framework\framework-spring-cucumber-testng\functional)
-2022-09-15 11:26:13 [TestNG-PoolService-1] INFO com.solution.ui.step.Hooks - The following profiles are active: prod
-2022-09-15 11:26:16 [TestNG-PoolService-1] INFO com.solution.ui.step.Hooks - Started Hooks in 3.295 seconds (JVM running for 14.841)
-2022-09-15 11:26:26 [TestNG-PoolService-0] INFO c.s.ui.step.WikipediaPageSteps - The user navigated to the Wikipedia Homepage : https://www.wikipedia.org/
-2022-09-15 11:26:27 [TestNG-PoolService-1] INFO c.s.ui.step.WikipediaPageSteps - The user navigated to the Wikipedia Homepage : https://www.wikipedia.org/
-2022-09-15 11:26:29 [TestNG-PoolService-0] INFO c.s.ui.step.WikipediaPageSteps - The user clicked the Common link on the Homepage
-2022-09-15 11:26:29 [TestNG-PoolService-0] INFO c.solution.ui.step.CommonPageSteps - The Wikipedia Common page should be opened
-2022-09-15 11:26:30 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
-2022-09-15 11:26:30 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-15 11:26:30 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
-2022-09-15 11:26:30 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-15 11:26:30 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
-2022-09-15 11:26:30 [TestNG-PoolService-1] INFO c.s.ui.step.WikipediaPageSteps - The user clicked the Common link on the Homepage
-2022-09-15 11:26:30 [TestNG-PoolService-1] INFO c.solution.ui.step.CommonPageSteps - The Wikipedia Common page should be opened
-2022-09-15 11:26:30 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
-2022-09-15 11:26:30 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-15 11:26:30 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
-2022-09-15 11:26:30 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-15 11:26:30 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
-2022-09-15 11:26:36 [TestNG-PoolService-1] INFO c.s.ui.step.WikipediaPageSteps - The user navigated to the Wikipedia Homepage : https://www.wikipedia.org/
-2022-09-15 11:26:38 [TestNG-PoolService-1] INFO c.s.ui.step.WikipediaPageSteps - The user clicked the Common link on the Homepage
-2022-09-15 11:26:38 [TestNG-PoolService-1] INFO c.solution.ui.step.CommonPageSteps - The Wikipedia Common page should be opened
-2022-09-15 11:26:38 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
-2022-09-15 11:26:38 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-15 11:26:38 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
-2022-09-15 11:26:38 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
-2022-09-15 11:26:38 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 21:59:01 [TestNG-PoolService-1] INFO com.solution.ui.step.Hooks - Starting Hooks on BLR-P7112490LP with PID 17912 (D:\Spring_Cucumber_Framework\framework-spring-cucumber-testng\functional\target\test-classes started by P7112490 in D:\Spring_Cucumber_Framework\framework-spring-cucumber-testng\functional)
+2022-10-20 21:59:01 [TestNG-PoolService-1] INFO com.solution.ui.step.Hooks - The following profiles are active: prod
+2022-10-20 21:59:02 [TestNG-PoolService-1] INFO com.solution.ui.step.Hooks - Started Hooks in 1.631 seconds (JVM running for 7.129)
+2022-10-20 21:59:28 [TestNG-PoolService-0] INFO c.s.ui.step.WikipediaPageSteps - The user navigated to the Wikipedia Homepage : https://www.wikipedia.org/
+2022-10-20 21:59:28 [TestNG-PoolService-1] INFO c.s.ui.step.WikipediaPageSteps - The user navigated to the Wikipedia Homepage : https://www.wikipedia.org/
+2022-10-20 21:59:31 [TestNG-PoolService-0] INFO c.s.ui.step.WikipediaPageSteps - The user clicked the Common link on the Homepage
+2022-10-20 21:59:31 [TestNG-PoolService-0] INFO c.solution.ui.step.CommonPageSteps - The Wikipedia Common page should be opened
+2022-10-20 21:59:31 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 21:59:31 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 21:59:31 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-10-20 21:59:31 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 21:59:31 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 21:59:31 [TestNG-PoolService-1] INFO c.s.ui.step.WikipediaPageSteps - The user clicked the Common link on the Homepage
+2022-10-20 21:59:31 [TestNG-PoolService-1] INFO c.solution.ui.step.CommonPageSteps - The Wikipedia Common page should be opened
+2022-10-20 21:59:32 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 21:59:32 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 21:59:32 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-10-20 21:59:32 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 21:59:32 [TestNG-PoolService-1] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 21:59:55 [TestNG-PoolService-0] INFO c.s.ui.step.WikipediaPageSteps - The user navigated to the Wikipedia Homepage : https://www.wikipedia.org/
+2022-10-20 21:59:57 [TestNG-PoolService-0] INFO c.s.ui.step.WikipediaPageSteps - The user clicked the Common link on the Homepage
+2022-10-20 21:59:57 [TestNG-PoolService-0] INFO c.solution.ui.step.CommonPageSteps - The Wikipedia Common page should be opened
+2022-10-20 21:59:57 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
+2022-10-20 21:59:57 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 21:59:57 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ================================Test: PASSED ===============================
+2022-10-20 21:59:57 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - ==========================================================================
+2022-10-20 21:59:57 [TestNG-PoolService-0] INFO com.solution.common.utils.HookUtil - 
